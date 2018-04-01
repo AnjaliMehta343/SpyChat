@@ -142,7 +142,7 @@ elif spy_exist.upper()=="Y": #if spy is new then the registration starts
                 else:
                     print "Are you really a spy?"
                 spy_is_online=True
-                print "Authentication is completed. Welcome %s of age: %d having ratings %f " % (spy_name,spy_age,spy_ratings)
+                print "Authentication is completed. Welcome %s of age: %d having ratings %f " % (spy['name'],spy['age'],spy['ratings'])
                 start_chat(spy['name'],spy['age'],['spy_ratings']) # to provide options to the spy
             else:
                 print "Sorry.Your age is not eligible to be a spy."
